@@ -1,0 +1,6 @@
+1.创建类并继承cordova
+2.修改res/xml/config.xml
+3.添加插件
+<feature name="GetSignTest">
+    <param name="android-package" value="xiao.cordova.list.sign.GetSignTest" />
+</feature>

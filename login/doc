@@ -1,0 +1,29 @@
+
+/*
+* 获得登录sign
+* @param action  getLoginSign
+* @param array   [username,password,time]
+*/
+
+
+/*
+* 设置token
+* @param action  setToken
+* @param array   [token]
+*/
+
+
+/*
+* 获取sign
+* @param action  getSign
+* @param array   [version,time]
+*/
+
+
+
+
+
+
+
+
+
