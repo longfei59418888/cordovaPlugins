@@ -1,0 +1,17 @@
+{
+  "name": "wxl.cordova.list.getSign",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "wxl.cordova.list.getSign",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}
