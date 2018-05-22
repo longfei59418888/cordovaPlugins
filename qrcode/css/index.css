@@ -1,0 +1,28 @@
+/*很做作的做了一个上下移动的横线，也不知道是受了谁家二维码扫描的影响*/
+body,html{width:100%;height:100%;margin: 0;}
+.qrscanner {position: fixed;left: 0;top: 0;width: 100%;height: 100%;display: flex;overflow: hidden}
+.qrscanner .qrscanner-left{flex: 1;height: 100%;background: rgba(0,0,0,.1)}
+
+.qrscanner-area {width: 250px;height: 100%;display: flex;flex-direction: column}
+.qrscanner-area .qrscanner-area-center{height: 250px;background: url(../img/qrcode.png) no-repeat center center;background-size: 100% 100%;
+    position: relative}
+.qrscanner-area .qrscanner-area-top{flex: 1;background: rgba(0,0,0,.1)}
+.qrscanner-area .qrscanner-area-bottom{flex: 2;background: rgba(0,0,0,.1)}
+.qrscanner-area .qrscanner-area-center p{position: absolute;left: 7%;height: 2px;width: 86%;
+    animation: myfirst 5s infinite linear;}
+.qrscanner-area .qrscanner-area-bottom .option{text-align: center;margin-top: 80px;}
+.qrscanner-area .qrscanner-area-bottom .option span{display: inline-block;
+    height: 65px;width: 65px;border-radius: 100%;background: rgba(0,0,0,.6);background-position: center;background-repeat: no-repeat;
+}
+.qrscanner-area .qrscanner-area-bottom .option span:first-child{margin-right: 50px;
+    background-image: url("../img/shandian.svg");}
+.qrscanner-area .qrscanner-area-bottom .option span:last-child{
+    background-image: url("../img/xiangji.svg");}
+@keyframes myfirst {
+    0% {background: red;top: 0%;}
+    25% {background: yellow;top: 45%;}
+    50% {background: blue;top: 85%;}
+    75% {background: green;top: 45%;}
+    100% {background: red;top: 0%;}
+}
+#test{position: absolute;z-index: 1000;}
